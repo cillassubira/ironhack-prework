@@ -9,17 +9,17 @@
 	#Inicializo result como string para poder añadir texto
 	result = ""
 
-	if num%3==0
+	if num%3 == 0
 		result = "Fizz"
 	end
 
-	if num%5==0
-		result = result + "Buzz"
+	if num%5 == 0
+		result << "Buzz"
 	end
 
 # Paso numero a string para saber si en la primera posición hay un 1
 	if num.to_s.index("1") == 0
-		result = result + "Bang"
+		result << "Bang"
 
 	elsif num%3!=0 && num%5!=0
 		result = num
