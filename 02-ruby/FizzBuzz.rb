@@ -21,7 +21,7 @@
 	if num.to_s.index("1") == 0
 		result = result + "Bang"
 
-	elsif(num%3!=0 && num%5!=0)
+	elsif num%3!=0 && num%5!=0
 		result = num
 	end
 
