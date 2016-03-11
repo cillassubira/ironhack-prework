@@ -4,7 +4,7 @@
 
 def wordsorting (sentence)
 	# removing punctuation and splitting sentence
-	wordlist = sentence.delete(".").split(" ")
+	wordlist = sentence.gsub(/\W/, ' ').split(" ")
 	#sorting alpahbetically +  upcase
 	puts wordlist.sort_by { |word| word.upcase }
 end
