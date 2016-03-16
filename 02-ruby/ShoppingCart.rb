@@ -13,7 +13,7 @@ class ShoppingCart
     @items.push(item)
   end
 
-  def price_of_order
+  def checkout
     total_price_of_order = 0.0
     #binding.pry
     #Add each item price to our total
@@ -65,12 +65,12 @@ rice = Item.new("Rice", 1)
 vacuum_cleaner = Houseware.new("Vacuum Cleaner", 150)
 anchovies = Item.new("Anchovies", 2)
 
-#Customer1 ShoppingCart
-customer1 = ShoppingCart.new
-customer1.add_item(rice)
-customer1.add_item(vacuum_cleaner)
-customer1.add_item(banana)
+#Iteration Three
+joshs_cart = ShoppingCart.new
+joshs_cart.add_item(orange_juice)
+joshs_cart.add_item(rice)
+joshs_cart.checkout
 
-puts "Customer1 total bill amount is #{customer1.price_of_order}"
+puts "Josh, Your total today is #{joshs_cart.checkout}. Have a nice day!"
 
 
