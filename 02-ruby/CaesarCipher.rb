@@ -1,23 +1,33 @@
 # Caesar Cipher
-# First iteration
-# left shift 1 (except "a" -> "z")
+# Second iteration
+# shift to be choosen
 
-def solve_cipher(input)
+def solve_cipher(input, shift)
+
+# Positive numbers shift right and negative numbers shift left 
+	if shift < 0
+		shift = -shift
+	end
 
 	output = ""
 	(input.split"").each do |letra|
 
-		# convert a to z
-		if letra.ord == 97
-			indice = 122
-		else
-			indice = letra.ord - 1
-		end
+		# Spaces remain as spaces
+		if letra == " "
+			output << " "
 
-	output << indice.chr	
+		# a will be z in case of shift = 1
+		elsif letra.ord == 97
+			indice = 122 + shift
+
+		else
+			indice = letra.ord - shift
+
+		output << indice.chr
+		end
 	end
 	puts output
 end
 
-solve_cipher("ifmmp")
-solve_cipher("aaaa")
+solve_cipher("ifmmp ifmmp ifmmp", 1)
+solve_cipher("p| uhdo qdph lv grqdog gxfn", -3)
