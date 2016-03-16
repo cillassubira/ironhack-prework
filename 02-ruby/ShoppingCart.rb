@@ -20,6 +20,10 @@ class ShoppingCart
     @items.each do |item|
       total_price_of_order += item.price
     end
+    #More than 5 items in the Shopping Cart 10% Discount
+    if @items.length > 5
+      total_price_of_order = total_price_of_order * 0.90
+    end
     total_price_of_order
   end
 end
@@ -65,10 +69,16 @@ rice = Item.new("Rice", 1)
 vacuum_cleaner = Houseware.new("Vacuum Cleaner", 150)
 anchovies = Item.new("Anchovies", 2)
 
-#Iteration Three
+#Iteration Four Test
 joshs_cart = ShoppingCart.new
 joshs_cart.add_item(orange_juice)
 joshs_cart.add_item(rice)
+joshs_cart.add_item(rice)
+joshs_cart.add_item(rice)
+joshs_cart.add_item(banana)
+joshs_cart.add_item(banana)
+joshs_cart.add_item(banana)
+
 joshs_cart.checkout
 
 puts "Josh, Your total today is #{joshs_cart.checkout}. Have a nice day!"
