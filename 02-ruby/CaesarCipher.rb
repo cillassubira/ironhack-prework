@@ -1,8 +1,14 @@
 # Caesar Cipher
-# Second iteration
-# shift to be choosen
+# Third iteration
+# left shift of 3 as default parameter
 
-def solve_cipher(input, shift)
+def solve_cipher(input, shift=nil)
+
+# Setting -3 as defautl shift
+	if shift.nil? 
+		shift = -3
+	end
+
 
 # Positive numbers shift right and negative numbers shift left 
 	if shift < 0
@@ -17,7 +23,7 @@ def solve_cipher(input, shift)
 			output << " "
 
 		# a will be z in case of shift = 1
-		elsif letra.ord == 97
+		elsif letra == 'a'
 			indice = 122 + shift
 
 		else
@@ -30,4 +36,5 @@ def solve_cipher(input, shift)
 end
 
 solve_cipher("ifmmp ifmmp ifmmp", 1)
-solve_cipher("p| uhdo qdph lv grqdog gxfn", -3)
+# not entering shift to use default
+solve_cipher("p| uhdo qdph lv grqdog gxfn")
