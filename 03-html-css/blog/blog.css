@@ -1,0 +1,12 @@
+body {
+  font-family: "Helvetica";
+}
+
+.niceParagraph, span {
+  background-color: grey;
+  font-family: "Baskerville";
+}
+
+footer p {
+  background-color: orange;
+}
