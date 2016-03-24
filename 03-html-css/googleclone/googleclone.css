@@ -1,0 +1,127 @@
+header {
+	background-color: white;
+    height: 50px;
+    width: 100%;
+    font-size: 13px;
+}
+
+footer {
+	height: 50px;
+	width: 100%;
+	background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px;
+    color: #666;
+}
+a {
+	text-decoration: unset;
+	color: unset;
+}
+
+.menu-right{
+	float: right;
+}
+
+.menu-right-element {
+	float:left;
+	margin-right: 10px;
+}
+
+.menu-right-element-text {
+	float:left;
+	margin-right: 10px;
+	padding-top: 10px;
+	font-size: small;
+    font-family: arial,sans-serif;
+}
+
+.menu-right-element-plain {
+	float:left;
+	margin-right: 10px;
+	padding-top: 10px;
+	font-size: small;
+    font-family: arial,sans-serif;
+    color: #666;
+}
+
+.menu-right-element-text:hover {
+	text-decoration: underline;
+}
+
+.elements {
+	background-color: white;
+	width: 100%;
+	height: 390px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.logo {
+	text-align: center;
+}
+
+.searchbox {
+	background-color: white;
+	height: 38px;
+	width: 584px;
+	margin: 0 auto;
+	text-align: right;
+	border: 1px solid #EEEEEE;
+}
+
+.micro {
+	margin-top: 9px;
+	margin-right: 5px;
+}
+
+.buttons {
+	background-color: white;
+	height: 36px;
+	width: 584px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.click {
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
+	color: #757575;
+	height: 36px;
+    line-height: 27px;
+    margin: 11px 4px;
+    font-family: arial,sans-serif;
+    font-size: small;
+    font-weight: bold;
+
+
+}
+
+.click:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+.menu-left {
+	float:left;
+
+}
+
+.menu-left-element {
+	float:right;
+	margin-left: 10px;
+}
+
+.menu-left-element-text {
+	float:right;
+	margin-left: 10px;
+	padding-top: 10px;
+	font-size: small;
+    font-family: arial,sans-serif;
+}
+
+.menu-left-element-text:hover {
+	text-decoration: underline;
+
+
+
